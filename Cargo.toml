@@ -1,0 +1,19 @@
+[package]
+name = "design-tokens"
+description = "Utilities for working with design tokens."
+repository = "https://github.com/iamnbutler/design-tokens"
+authors = [
+    "Nate Butler <iamnbutler@gmail.com>",
+]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+serde = {version = "1.0.203", features = ["derive"]}
+serde_json = {version = "1.0.118", features = ["preserve_order"]}
+
+indexmap = {version = "2.2.6", features = ["serde"], optional = true}
+
+[features]
+ordered = ["indexmap"]
