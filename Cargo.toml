@@ -1,13 +1,18 @@
 [package]
-name = "design-tokens"
+name = "design_tokens"
 description = "Utilities for working with design tokens."
-repository = "https://github.com/iamnbutler/design-tokens"
+repository = "https://github.com/iamnbutler/design_tokens"
 authors = [
     "Nate Butler <iamnbutler@gmail.com>",
 ]
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+
+[lib]
+name = "design_tokens"
+path = "src/lib.rs"
+
 
 [dependencies]
 serde = {version = "1.0.203", features = ["derive"]}
